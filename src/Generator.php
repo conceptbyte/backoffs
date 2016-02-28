@@ -8,33 +8,33 @@ class Generator
     /**
      * Generate an exponential backoff for a number
      *
-     * @param $number
+     * @param $attempts
      * @return number
      */
-    public function exponential($number)
+    public function exponential($attempts)
     {
-        return (int) ceil(pow(M_E, $number));
+        return (int) ceil(pow(M_E, $attempts));
     }
 
     /**
      * Generate a linear backoff for a number
      *
-     * @param $number
+     * @param $attemps
      * @return int
      */
-    public function linear($number)
+    public function linear($attemps)
     {
-        return (int) $number += 1;
+        return (int) $attemps += 1;
     }
 
     /**
      * Generate a logarithmic backoff for a number
      *
-     * @param $number
+     * @param $attempts
      * @return int
      */
-    public function logarithmic($number)
+    public function logarithmic($attempts)
     {
-        return (int) ceil(log($number));
+        return (int) ceil(log($attempts));
     }
 }
