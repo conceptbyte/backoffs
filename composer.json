@@ -1,0 +1,21 @@
+{
+  "name": "conceptbyte/backoffs",
+  "description": "An implementation of multiple backoff algorithms",
+  "type": "package",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Rajdeep Tarat",
+      "email": "rajdeeptarat@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "phpunit/phpunit": "^5.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Backoffs\\": "src/"
+    }
+  }
+}
