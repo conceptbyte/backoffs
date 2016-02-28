@@ -1,2 +1,2 @@
-# backoffs
-An implementation of multiple backoff algorithms
+# Backoff Algorithms in PHP
+// TODO:
